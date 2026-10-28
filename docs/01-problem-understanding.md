@@ -1,5 +1,5 @@
 
-# SENTINEL — Problem Understanding
+# FraudLens — Problem Understanding
 
 ## 1. Project Overview
 FraudLens is an adaptive fraud intelligence platform designed to help identify potentially fraudulent card transactions and prioritise them for investigation and rectification.
@@ -52,9 +52,8 @@ The planned technology stack includes:
 
 ## 5. Assumptions and Limitations
 
-> The initial model will be developed using a publicly available historical credit card fraud dataset and the  dataset is expected to contain labelled transactions, but its exact schema, feature meanings, timestamp availability, data quality, and suitability for the intended evaluation must be verified before implementation decisions are finalised.
-
-*Anonymised features will not be assigned invented real-world meanings.
+* The initial model will be developed using a publicly available historical credit card fraud dataset and the  dataset is expected to contain labelled transactions, but its exact schema, feature meanings, timestamp availability, data quality, and suitability for the intended evaluation must be verified before implementation decisions are finalised.
+* Anonymised features will not be assigned invented real-world meanings.
 * Historical dataset performance may not represent performance on future transactions or in a real financial institution.
 * The dataset may not contain account, device, merchant-network, or other relational information required for graph-based fraud analysis.
 * Prediction explanations will describe model feature contributions, not prove the cause of fraud
