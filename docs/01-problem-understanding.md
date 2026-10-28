@@ -18,17 +18,36 @@ A fraud detection system must identify suspicious transactions while avoiding ex
 A machine learning model alone does not solve the entire problem. Predictions must be converted into actionable priorities, investigators need a way to review suspicious cases and model performance must be evaluated against reliable outcomes when those outcomes become available.
 
 
-## 3. Current Challenges
+## 3. Challenges
+This project will address following challenges:
+1. Class imbalance: Fraudulent transactions may be much less common than legitimate transactions, making accuracy as an unreliable measure for model quality.
+2. False positives: Legitimate transactions may be incorrectly flagged, increasing investigation workload on the analyst.
+3. False negatives: Fraudulent transactions may be classified as legitimate which cause the system to miss potential fraud.
+4. Investigation capacity: Analysts may be unable to review every flagged transaction, making risk ranking n transactions at a time.
+5. Model interpretability: Investigators need useful information about the factors contributing to a prediction, while recognising that explanations do not establish causality.
+6. Changing data patterns: Changes in transaction behaviour or input data over time may reduce the usefulness of the model we selected.
 
-## 4. Intended Users
 
-## 5. Proposed Solution
+## 4. Proposed Solution
 
-## 6. Initial Scope
+ As solution for problem  the "FraudLens" use a modular architecture and proposed workflow go as:
 
-### In Scope
+* Transaction input: Accept transaction features available to the prototype and validate the input.
+* Risk prediction: Use a trained machine learning pipeline to produce a fraud-risk score.
+* Decision policy: Apply a separately configurable policy to categorise and prioritise transactions.
+* Investigation queue: Rank each transactions by risk and support prioritisation under a defined review capacity of the analyst.
+* Prediction explanation: Provide feature-contribution explanations where supported by the selected model and data.
+* Case management: Store investigation records and allow authorised prototype users to record outcomes such as confirmed fraud, legitimate, or inconclusive.
+* Evaluation and monitoring: Track data quality, service health, prediction patterns, and model metrics when reliable outcome labels become available.
+* Model lifecycle management: Track experiments and model versions, and evaluate candidate models before promoting them.
 
-### Out of Scope
+The planned technology stack includes:
+* Python, pandas, scikit-learn and suitable gradient-boosting libraries for machine learning
+* FastAPI for the backend
+* PostgreSQL for persistence
+* Streamlit for the user dashboard
+* Docker for reproducible deployment.
+* MLflow will be considered for experiment and model tracking.
 
 ## 7. Success Measures
 
