@@ -49,8 +49,15 @@ The planned technology stack includes:
 * Docker for reproducible deployment.
 * MLflow will be considered for experiment and model tracking.
 
-## 7. Success Measures
 
-## 8. Assumptions and Limitations
+## 5. Assumptions and Limitations
 
-## 9. Open Questions
+> The initial model will be developed using a publicly available historical credit card fraud dataset and the  dataset is expected to contain labelled transactions, but its exact schema, feature meanings, timestamp availability, data quality, and suitability for the intended evaluation must be verified before implementation decisions are finalised.
+
+*Anonymised features will not be assigned invented real-world meanings.
+* Historical dataset performance may not represent performance on future transactions or in a real financial institution.
+* The dataset may not contain account, device, merchant-network, or other relational information required for graph-based fraud analysis.
+* Prediction explanations will describe model feature contributions, not prove the cause of fraud
+* A model score will not automatically be interpreted as a calibrated probability.
+* Confirmed outcomes may be delayed, incomplete, or uncertain because the model performance is measured only against appropriate available labels in  the dataset.
+* Investigation outcomes recorded in the prototype will be treated as feedback requiring validation .
