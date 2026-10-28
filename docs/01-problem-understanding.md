@@ -49,6 +49,11 @@ The planned technology stack includes:
 * Docker for reproducible deployment.
 * MLflow will be considered for experiment and model tracking.
 
+##Success Measure
+* Evaluate the model using precision, recall, PR-AUC, and aconfusion matrix. Evaluate the investigation queue using precision or recall at a defined review capacity.
+* Assess API reliability, input validation, test coverage,and reproducibility as system-level quality measures.
+Performance targets will be decided after establishing a baseline and examining the dataset.
+
 
 ## 5. Assumptions and Limitations
 
