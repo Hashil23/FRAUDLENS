@@ -2,7 +2,7 @@
 # FraudLens — Requirements Specification
 
 ## 1. Purpose
-This purpose of this document is to defines the functional and non-functional requirements, initial scope, and acceptance criteria for FraudLens project, an end-to-end fraud intelligence prototype.
+This document defines the functional and non-functional requirements, initial scope, and acceptance criteria for FraudLens, an end-to-end fraud-intelligence prototype.
 
 ## 2. Users and Stakeholders
 - Fraud analyst: Primary user who needs to review and inspect  on critical transaction  based on priority order of risk, and record outcomes
@@ -46,7 +46,7 @@ This purpose of this document is to defines the functional and non-functional re
 
 
 ## 5. MVP Scope
-> MVP means "Minimum viable product" thats a  strategy where a new product is built with the minimum set of features required to deliver value to early users and validate a business idea, instead of fully devolping in the beginning but here in this scenario i intended to devolpe and setup basic required features with limited knowledge and further expand this projects by expanding my knowledge
+> The MVP is the smallest end-to-end version that demonstrates the core fraud-intelligence workflow. Features will be added incrementally as the project and my engineering skills develop.
 
 Included in the Initial Release:
 * Audit and prepare the selected historical fraud dataset.
